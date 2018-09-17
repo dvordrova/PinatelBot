@@ -65,4 +65,4 @@ if __name__ == '__main__':
 
 
         # Собственно, запуск!
-        cherrypy.quickstart(webhook.WebhookServer(), config.WEBHOOK_URL_PATH, {'/': {}})
+        cherrypy.quickstart(webhook.WebhookServer(bot), config.WEBHOOK_URL_PATH, {'/': {}})
